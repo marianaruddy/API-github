@@ -1,45 +1,33 @@
-const cep = document.getElementById('cep');
-const btn = document.getElementById('btn-search');
-const renderInfo = document.getElementById('info');
+const URL = `https://api.github.com/users/marvin-ai/repos`
+     function consulta() {
+      
+      const request = fetch(URL)
+    
+      request
+        .then(response => response.json())
+        .then(response => {
+          console.log(response)
+          // document.getElementById("container").innerHTML=response.results[0].name.first
+        });
+    }
+    consulta();
+    // function pegarDadosProcessados(url) {
+    //   return baixarDados(url) // retorna uma Promise
+    //     .catch(e => {
+    //       return baixarDadosReservas(url) // retorna uma Promise
+    //     })
+    //     .then(v => {
+    //       return processarDadosNoWorker(v); // retorna uma Promise
+    //     });
+    // }
 
-btn.addEventListener('click', (e) => {
-    e.preventDefault()
-    const cepValue = cep.value;
-    consultaCep(cepValue)
-  });
-  
-  function consultaCep(cep) {
-    const URL = `https://cep.webschool.io/api/br/${cep}`
-    const request = fetch(URL)
-  
-    request
-      .then(data => data.json())
-      .then(data => {
-        const { city, address, district, state } = data;
-        createSectionInfo(city, address, district, state);
-      });
-  }
-  
-  function createSectionInfo(city, address, district, state) {
-    const tableInfo = `
-      <table class="table">
-        <thead>
-          <tr>
-            <th>RUA</th>
-            <th>BAIRRO</th>
-            <th>CIDADE</td>
-            <th>ESTADO</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>${address}</td>
-            <td>${district}</td>
-            <td>${city}</td>
-            <td>${state}</td>
-          </tr>
-        </tbody>
-      </table>`
-    renderInfo.innerHTML = tableInfo;
-  }
+    // listen (start app with node server.js) ======================================
+    // app.listen(8080, () => {
+    //   console.log("App listening on port 8080");
+    //   pegarDadosProcessados();
+    // });
+    
+
+
+
   
