@@ -3,6 +3,8 @@ body{
     /* margin-top: 0; */
     height: 100vh;
     color: white;  
+    display: flex;
+
 }
  div{
     height: 100%;
@@ -13,26 +15,33 @@ body{
 /*.title{
     color: aliceblue;
 } */
-h1 {
-    background-color: blue;
+.menuLateral {
+    background-color:rgb(94, 135, 224);;
     font: times; 
     text-align: center;
     border-top: 100px;
     margin: 0;
     padding: 25px 0;
     font-style: helvetica;
+    color: black;
 }
 ul{
-    background-color: blue;
-    width: 40%;
+    background-color:  rgb(94, 135, 224);
+    width: 100%;
     height: 100%;
     margin: 0%;
+    text-decoration:none; 
+}
+.home{
+    /* text-align: left; S    */
 }
 li{
-    color: blue;
+    color: rgb(94, 135, 224);
     text-align: right;
     margin-right: 40px; 
+    text-decoration:none; 
 }
 a {
     color: white;
+    text-decoration:none; 
 }
