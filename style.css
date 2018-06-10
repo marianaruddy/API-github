@@ -1,45 +1,57 @@
 body{
-    margin: 0%;
+    margin: 0%;  /*ok*/
     /* margin-top: 0; */
-    height: 100vh;
-    color: white;  
-    display: flex;
-
+    height: 100vh;  /*ok*/
+    color: white;    /*ok*/
+    display: flex;  /*ok*/
 }
- div{
-    height: 100%;
-    width: 100%; 
-    margin: 0%;
-
+div{
+    /* margin: 0%; */
 }
 /*.title{
     color: aliceblue;
 } */
 .menuLateral {
-    background-color:rgb(94, 135, 224);;
-    font: times; 
-    text-align: center;
+    background-color:rgb(94, 135, 224);  /*ok*/
+    text-align: center;  /*ok*/
     border-top: 100px;
-    margin: 0;
-    padding: 25px 0;
-    font-style: helvetica;
-    color: black;
+    margin: 0;  /*ok*/
+    padding: 25px 0;  /*ok*/
+    /* color: black; */
+}
+.pagDeProjeto{
+    height: 100%;  /*ok*/
+    width: 100%;   /*ok*/
+    backface-visibility: inherit;
+}
+.topo{
+    display: flex;  /*ok*/
+    color: gray;
+}
+.topo-stars{
+    margin: auto;
+}
+.topo-forks{
+    margin: auto;
+}
+.topo-contribs{
+    margin: auto;
 }
 ul{
-    background-color:  rgb(94, 135, 224);
-    width: 100%;
-    height: 100%;
-    margin: 0%;
-    text-decoration:none; 
+    background-color:  rgb(94, 135, 224);     /*ok*/
+    width: 100%;  /*ok*/
+    height: 100%;  /*ok*/
+    /* margin: 0%; */
+    text-decoration:none;  /*ok*/ 
 }
 .home{
     /* text-align: left; S    */
 }
 li{
-    color: rgb(94, 135, 224);
-    text-align: right;
-    margin-right: 40px; 
-    text-decoration:none; 
+    color: rgb(94, 135, 224);  /*ok*/
+    text-align: right;  /*ok*/
+    margin-right: 40px;   /*ok*/
+    text-decoration:none;   /*ok*/
 }
 a {
     color: white;
