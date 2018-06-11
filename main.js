@@ -40,5 +40,17 @@ function requerimento() {
 			    
 		};
 	});
+
+	var ordenalist = `$(".href")`;
+	ordenalist.sort(function(a, b){
+		return `$(b).attr(stars)` - `$(a).attr(stars)`
+	});
+
+// 	var divList = $(".produtos");
+// divList.sort(function(a, b) {
+//     // para ordem decrescente; use a - b para crescente
+//     return $(b).attr("contagem") - $(a).attr("contagem")
+// });
+// $("#pai").html(divList);
 }
 requerimento();
