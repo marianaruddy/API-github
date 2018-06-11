@@ -3,29 +3,23 @@ const URL = 'https://api.github.com/users/marvin-ai/repos'; /*github*/
 
 document.documentURI = './pagDeProduto.html';
 var pagDeProduto = document.documentURI;
-
 document.documentURI = './index.html';
 var index = document.documentURI;
-
 document.documentURI = './pagDeProduto.html';
 var pagDeProduto = document.documentURI;
-
 document.documentURI = './index.html';
 var index = document.documentURI;
 
 function createElement(tag) {
 	return document.createElement(tag);
 }
-
 function getElemById(id) {
 	return document.getElementById(id);
 }
-
 async function requerimento() {
 	const request = await fetch(URL);
 	return request.json();
 };
-
 const response = requerimento();
 response.then(data => {
 	console.log(data);
@@ -62,9 +56,7 @@ response.then(response => {
 		// a.setAttribute('href', `./pagDeProjeto.html?name=${response.results[i].name.first}`)   /*randomname*/
 		// a.innerHTML = response.results[i].name.first;                                          /*randomname*/
 
-
 	}
-
 
 	for (i = 0; i < tam; i++) {
 		console.log(i, numForks[i])
@@ -72,12 +64,9 @@ response.then(response => {
 			break;
 		}
 	}
-
 })
-	function faz(response) {
-		// const tam =  response.results.length;                                                    /*randomname*/
 
-
+function faz(response) {
 	let forks = getElemById('forks-number');
 	console.log(numForks[i])
 	forks.innerHTML = numForks[i];
@@ -88,18 +77,18 @@ response.then(response => {
 	contribs.innerHTML = numContribs[i];
 	// forks[i].innerHTML = response[i].name.first; /*randomname*/
 
-	}
+}
 
 faz(response);
 
-	// var ordenalist = `$(".href")`;
-	// ordenalist.sort(function(a, b){
-	// 	return `$(b).attr(stars)` - `$(a).attr(stars)`
-	// });
+// var ordenalist = `$(".href")`;
+// ordenalist.sort(function(a, b){
+// 	return `$(b).attr(stars)` - `$(a).attr(stars)`
+// });
 
-	// 	var divList = $(".produtos");
-	// divList.sort(function(a, b) {
-	//     // para ordem decrescente; use a - b para crescente
-	//     return $(b).attr("contagem") - $(a).attr("contagem")
-	// });
-	// $("#pai").html(divList);
+// 	var divList = $(".produtos");
+// divList.sort(function(a, b) {
+//     // para ordem decrescente; use a - b para crescente
+//     return $(b).attr("contagem") - $(a).attr("contagem")
+// });
+// $("#pai").html(divList);

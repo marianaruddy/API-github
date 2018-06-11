@@ -1,63 +1,62 @@
-body{
-    margin: 0%;  /*ok*/
-    /* margin-top: 0; */
-    height: 100vh;  /*ok*/
-    color: white;    /*ok*/
-    display: flex;  /*ok*/
+body {
+	margin: 0%; /*ok*/
+	/* margin-top: 0; */
+	height: 100vh; /*ok*/
+	color: white; /*ok*/
+	display: flex; /*ok*/
 }
-div{
-    /* margin: 0%; */
+div {
+	/* margin: 0%; */
 }
 /*.title{
     color: aliceblue;
 } */
 .menuLateral {
-    background-color:rgb(94, 135, 224);  /*ok*/
-    text-align: center;  /*ok*/
-    border-top: 100px;
-    margin: 0;  /*ok*/
-    padding: 25px 0;  /*ok*/
-    /* color: black; */
+	background-color: rgb(94, 135, 224); /*ok*/
+	text-align: center; /*ok*/
+	border-top: 100px;
+	margin: 0; /*ok*/
+	padding: 25px 0; /*ok*/
+	/* color: black; */
 }
-.pagDeProjeto{
-    height: 100%;  /*ok*/
-    width: 100%;   /*ok*/
-    backface-visibility: inherit;
-    
+.pagDeProjeto {
+	height: 100%; /*ok*/
+	width: 100%; /*ok*/
+	backface-visibility: inherit;
 }
-.topo{
-    display: flex;  /*ok*/
-    color: gray;
+.topo {
+	display: flex; /*ok*/
+	color: gray;
 }
-.topo-stars{
-    margin: auto;
-    display: flex;  /*ok*/
+.topo-stars {
+	margin: auto;
+	display: flex; /*ok*/
 }
-.topo-forks{
-    margin: auto;
-    display: flex;  /*ok*/
+.topo-forks {
+	margin: auto;
+	display: flex; /*ok*/
 }
-.topo-contribs{
-    margin: auto;
-    display: flex;  /*ok*/
+.topo-contribs {
+	margin: auto;
+	display: flex; /*ok*/
 }
-ul{
-    background-color:  rgb(94, 135, 224);     /*ok*/
-    width: 100%;  /*ok*/
-    height: 100%;  /*ok*/
-    /* margin: 0%; */
-    text-decoration:none;  /*ok*/ 
+ul {
+	background-color: rgb(94, 135, 224); /*ok*/
+	width: 100%; /*ok*/
+	height: 100%; /*ok*/
+	/* margin: 0%; */
+	text-decoration: none; /*ok*/
 }
-.home{
-    /* text-align: left; S    */
+.home {
+	/* color: rgb(94, 135, 224); */
 }
-li{
-    color: rgb(94, 135, 224);  /*ok*/
-    text-align: right;  /*ok*/
-    margin-right: 40px;   /*ok*/
-    text-decoration:none;   /*ok*/
+li {
+	color: rgb(94, 135, 224); /*ok*/
+	text-align: right; /*ok*/
+	margin-right: 40px; /*ok*/
+	text-decoration: none; /*ok*/
 }
 a {
-    color: white;
-    text-decoration:none; 
+	color: white;
+	text-decoration: none;
 }
