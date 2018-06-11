@@ -23,7 +23,10 @@ div{
     height: 100%;  /*ok*/
     width: 100%;   /*ok*/
     backface-visibility: inherit;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 402acf901ec7cc48e000e8ef7d1313703dce3699
 }
 .topo{
     display: flex;  /*ok*/
@@ -31,6 +34,7 @@ div{
 }
 .topo-stars{
     margin: auto;
+<<<<<<< HEAD
     display: flex;  /*ok*/
 }
 .topo-forks{
@@ -40,6 +44,14 @@ div{
 .topo-contribs{
     margin: auto;
     display: flex;  /*ok*/
+=======
+}
+.topo-forks{
+    margin: auto;
+}
+.topo-contribs{
+    margin: auto;
+>>>>>>> 402acf901ec7cc48e000e8ef7d1313703dce3699
 }
 ul{
     background-color:  rgb(94, 135, 224);     /*ok*/
