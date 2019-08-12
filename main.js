@@ -1,4 +1,4 @@
-const URL = 'https://api.github.com/users/marvin-ai/repos'; /*github*/
+const URL = 'https://api.github.com/users/elastic/repos'; /*github*/
 // const URL = `https://randomuser.me/api/`; /*randomname*/
 
 document.documentURI = './pagDeProduto.html';
@@ -25,9 +25,45 @@ async function requerimento() {
 };
 
 const response = requerimento();
-response.then(data => {
-	console.log(data);
-})
+const responseOrdenado = orderByStars(response);
+
+async function orderByStars(repos) {
+	const ordenado = Object.values(repos).sortBy('stargazers_count');
+	console.log('ordenado', await ordenado);
+	return ordenado;
+	// console.log('repos', await repos);
+	// const reposArray = await Object.values(repos);
+	// console.log(await reposArray);
+	// function sortByStars(a, b) {
+	// 	console.log('a', a);
+	// 	if(a.stargazers_count > b.stargazers_count) {
+	// 		return -1
+	// 	}
+	// 	if(a.stargazers_count < b.stargazers_count) {
+	// 		return 1
+	// 	}
+	// 	return 0
+	// }
+	// const sortedReposArray = await reposArray.sort(sortByStars());
+	// console.log(await sortedReposArray);
+	// return sortedReposArray;
+}
+async function loga() {
+	console.log('response', await response);
+	console.log('responseOrdenado', await responseOrdenado);
+}
+// responseOrdenado.then(data => {
+	// 	console.log('full_name', data[0].full_name);
+	// 	console.log('data', data);
+	// })
+// .then(data => {
+// 	data.sort(function(a, b) {
+// 		return `$(b).attr(stars)` - `$(a).attr(stars)`
+// 	});
+// })
+// .then(responseOrdenado => {
+// 	console.log('responseOrdenado', responseOrdenado);
+// });
 
 let i;
 let name = [];
@@ -73,18 +109,6 @@ response.then(data => {
 	forks.innerHTML = data[i].forks_count;
 	stars.innerHTML = data[i].stargazers_count;
 	// contribs.innerHTML = data[i].;
-
-
-	
-	 const funcao = async() => {
-		const requerimento = await fetch('https://api.github.com/repos/marvin-ai/marvin-public-engines/contributors');
-		return requerimento.json();
-	};
-
-	let req =  funcao()
-	req.then(data => 
-	console.log(data))
-
 })
 
 'https://api.github.com/repos/marvin-ai/marvin-public-engines/contributors'
@@ -132,3 +156,4 @@ function faz(response) {
 
 //Clickable Dropdown:
 //https://www.w3schools.com/Jsref/tryit.asp?filename=tryjsref_onclick_dropdown
+	loga();
